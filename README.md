@@ -37,7 +37,7 @@ otherwise file mtime is used (often wrong after copying).
 ```
 
 ## Features
-- Track, start marker, photo pins (thumbnail avatars) on OSM tiles (Leaflet)
+- Track, start marker, photo pins (thumbnail avatars) on OSM tiles (React + react-leaflet)
 - Media strip synced with the map; tap again to open full screen (swipe / arrow keys)
 - Elevation profile you can scrub to move along the route
 - Bottom sheet on phones, side panel on desktop; multiple tours via `#slug`
