@@ -1,0 +1,20 @@
+name: ci
+
+on:
+  pull_request:
+  # Callable so `deploy.yml` gates on these exact checks; pushes to `main` are
+  # covered there, so they are not a trigger here too.
+  workflow_call:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      # Processes tours/ (thumbnails, tour.json), typechecks and bundles.
+      - run: npm run build

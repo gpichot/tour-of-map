@@ -6,7 +6,9 @@
     "dev": "vite",
     "tours": "tsx scripts/build-tours.ts",
     "build": "npm run tours && tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "deploy": "wrangler pages deploy"
   },
   "repository": {
     "type": "git",
@@ -35,7 +37,8 @@
     "sharp": "^0.35.4",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
-    "vite": "^8.3.1"
+    "vite": "^8.3.1",
+    "wrangler": "^4.141.0"
   },
   "type": "module",
   "private": true

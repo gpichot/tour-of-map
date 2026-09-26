@@ -1,0 +1,4 @@
+# Cloudflare Pages project. `npm run deploy` uploads `dist/` (run `npm run build` first).
+name = "tour-of-map"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-09-01"

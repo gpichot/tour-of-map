@@ -46,3 +46,11 @@ otherwise file mtime is used (often wrong after copying).
 Fully static: `npm run build` → `dist/`. Netlify/Vercel/Cloudflare Pages as-is;
 GitHub Pages with `BASE=/tour-of-map/ npm run build`.
 Large videos: transcode first (`ffmpeg -i in.mov -vf scale=-2:1080 -crf 26 out.mp4`), or host them on a CDN.
+
+### Cloudflare Pages (auto-deploy)
+Every push to `main` runs CI then deploys `dist/` via `.github/workflows/deploy.yml`.
+One-time setup — repo secrets (Settings → Secrets and variables → Actions):
+- `CLOUDFLARE_API_TOKEN` — token with **Account › Cloudflare Pages › Edit**
+- `CLOUDFLARE_ACCOUNT_ID`
+
+Pages limits: 25 MiB per file, 20k files — keep videos transcoded/small or host them elsewhere (e.g. R2).
