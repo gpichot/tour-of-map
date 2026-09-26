@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Bike Tours</title>
+</head>
+<body>
+  <div id="app">
+    <header id="bar">
+      <select id="tour-select" aria-label="Tour"></select>
+      <div id="stats"></div>
+    </header>
+    <div id="map"></div>
+    <section id="panel">
+      <canvas id="profile" aria-label="Elevation profile"></canvas>
+      <div id="strip" role="list"></div>
+    </section>
+  </div>
+  <dialog id="viewer">
+    <button id="prev" aria-label="Previous">‹</button>
+    <figure><div id="viewer-media"></div><figcaption id="viewer-cap"></figcaption></figure>
+    <button id="next" aria-label="Next">›</button>
+    <button id="close" aria-label="Close">×</button>
+  </dialog>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

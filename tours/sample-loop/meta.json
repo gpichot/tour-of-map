@@ -1,0 +1,10 @@
+{
+  "title": "Sample loop",
+  "description": "Synthetic demo tour — replace with your own.",
+  "timeOffsetMinutes": 0,
+  "media": {
+    "01-start.jpg": { "caption": "Leaving town", "time": "2026-06-01T08:10:00Z" },
+    "02-climb.jpg": { "caption": "Top of the climb", "time": "2026-06-01T09:05:00Z" },
+    "03-lake.jpg":  { "caption": "Lake stop", "time": "2026-06-01T10:30:00Z" }
+  }
+}
